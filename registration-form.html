@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Registration Form</title>
+</head>
+<body>
+ <bgcolor="Blue">
+<h1><center>Registration Form</center></h1>
+<form action="#" method="post"><center>
+<lable>Full Name*:</lable>
+<input type="text" name="full name" required><br><br>
+<lable>Password*:</lable>
+<input type="text" name="Password" required><br><br>
+<lable>enter your age*:</lable>
+<input type="text" name="Age" required><br><br>
+<lable>Branch*:</lable>
+<input type="text" name="Branch" required><br>
+<label>Gender*:</bold></label><br>
+ <input type="radio" name="relocate" value="Male" checked> Male<br>
+ <input type="radio" name="relocate" value="Female"> Female<br><br>
+<label>Hobbies*:</label><br>
+<label><input type="checkbox" name="Registration" value="Reading"
+/>Reading</label>
+<label><input type="checkbox" name="Registration" value="Music" />Music</label>
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Registration Form</title>
+</head>
+<body>
+ <bgcolor="Blue">
+<h1><center>Registration Form</center></h1>
+<form action="#" method="post"><center>
+<lable>Full Name*:</lable>
+<input type="text" name="full name" required><br><br>
+<lable>Password*:</lable>
+<input type="text" name="Password" required><br><br>
+<lable>enter your age*:</lable>
+<input type="text" name="Age" required><br><br>
+<lable>Branch*:</lable>
+<input type="text" name="Branch" required><br>
+<label>Gender*:</bold></label><br>
+ <input type="radio" name="relocate" value="Male" checked> Male<br>
+ <input type="radio" name="relocate" value="Female"> Female<br><br>
+<label>Hobbies*:</label><br>
+<label><input type="checkbox" name="Registration" value="Reading"
+/>Reading</label>
+<label><input type="checkbox" name="Registration" value="Music" />Music</label>
+<label><input type="checkbox" name="Registration" value="sports"
+/>Sports</label><br>
+<label><input type="checkbox" name="Registration" value="coding practice"
+/>Coding</label>
+<label><input type="checkbox" name="Registration" value="other"
+/>Other</label><br><br>
+<label for="dob">DATE-OF-BIRTH*:</label><br><br>
+<select id="day" name="day">
+ <option value="">Day</option>
+ <script>
+ for (let i = 1; i <= 31; i++) {
+ document.write(`<option value="${i}">${i}</option>`);
+ }
+ </script>
+</select>
+<select id="month" name="month">
+ <option value="">Month</option>
+ <option value="January">January</option>
+ <option value="February">February</option>
+ <option value="March">March</option>
+ <option value="April">April</option>
+ <option value="May">May</option>
+ <option value="June">June</option>
+ <option value="July">July</option> 
+<option value="August">August</option>
+ <option value="September">September</option>
+ <option value="October">October</option>
+ <option value="November">November</option>
+ <option value="December">December</option>
+</select>
+<select id="year" name="year">
+ <option value="">Year</option>
+ <script>
+ for (let y = 2002; y <= 2010; y++) {
+ document.write(`<option value="${y}">${y}</option>`);
+ }
+ </script>
+</select><br><br>
+ <input type="submit" value="Submit">
+</center>
+</body>
+</html>

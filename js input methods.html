@@ -1,0 +1,23 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Input Methods</title>
+</head>
+<body>
+<h2>Form Input Example</h2>
+<form id="myForm">
+<label>Name:<input id="name"type="text"required></label><br>
+<label>Age:<input id="age"type="number"min="1"></label><br>
+<button type="submit">Submit</button>
+</form>
+<div id="out"></div>
+<script>
+document.getElementById('myForm').addEventListener('submit',function(e)){
+e.preventDefault();
+const name=document.getElementById('name').value.trim();
+const age=document.getElementById('age').value;
+document.getElementById('out').textContent='Form input=>Name:${name},Age:${age}';
+</script>
+</body>
+</html>

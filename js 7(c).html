@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<body>
+  <h2>Array Object Example</h2>
+  <p id="arrOutput"></p>
+  <script>
+    let fruits = ["Apple", "Banana", "Mango"];
+
+    // Properties
+    let length = fruits.length;
+
+    // Methods
+    fruits.push("Orange");   // add element
+    fruits.sort();           // sort alphabetically
+    let joined = fruits.join(", ");
+
+    document.getElementById("arrOutput").innerHTML =
+      "Length: " + length + "<br>" +
+      "Sorted Fruits: " + joined;
+  </script>
+</body>
+</html>

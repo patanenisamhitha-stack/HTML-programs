@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <title>User-defined Object Example</title>
+</head>
+<body>
+  <h2>User-defined Object Example</h2>
+  <p id="userObjOutput"></p>
+
+  <script>
+    // Constructor function
+    function Student(name, age) {
+      this.name = name;
+      this.age = age;
+
+      // Method
+      this.display = function() {
+        return "Name: " + this.name + ", Age: " + this.age;
+      };
+
+      // Define getter and setter properly
+      Object.defineProperty(this, "info", {
+        get: function() {
+          return this.name + " (" + this.age + ")";
+        }
+      });
+
+      Object.defineProperty(this, "updateName", {
+        set: function(newName) {
+          this.name = newName;
+        }
+      });
+    }
+
+    // Create object using constructor
+    let s1 = new Student("Priya", 26);
+
+    // Use getter
+    let before = s1.info;
+
+    // Use setter
+    s1.updateName = "Pavani";
+
+    // Use method
+    let after = s1.display();
+
+    document.getElementById("userObjOutput").innerHTML =
+      "Before: " + before + "<br>" +
+      "After: " + after;
+  </script>
+</body>
+</html>

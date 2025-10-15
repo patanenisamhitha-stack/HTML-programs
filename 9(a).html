@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Factorial and Fibonacci</title>
+</head>
+<body>
+<h2>Factorial and Fibonacci Example</h2>
+<script>
+function factorial(n){
+let fact=1;
+for(let i=1;i<=n;i++){
+fact *= i;
+}
+return fact;
+}
+function Fibonacci(n){
+let fibSeries="";
+let a=0,b=1,next;
+for(let i=1;i<=n;i++){
+fibSeries += a+"";
+next=a+b;
+a=b;
+b=next;
+}
+return fibSeries;
+}
+let num=5;
+document.body.innerHTML+="<h3>Number:"+num+"</h3>";
+document.body.innerHTML+="Factorial of"+num+"is:"+factorial(num)+"<br>";
+document.body.innerHTML+="Fibonacci series up to"+num+"terms:"+Fibonacci(num);
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Output Methods</title>
+</head>
+<body>
+<h1>JavaScript Output Methods</h1>
+<!--Areas for output-->
+<p id="domOutput"></p>
+<div id="htmlOutput"></div>
+<script>
+alert("This is an  alert message!");
+console.log("This is a console.log() output. Open DevTools->Console to see it.");
+document.write("<p>This text is displayed using document.write()</p>");
+document.getElementById("htmlOutput").innerHTML="<strong>innerHTML output:</strong>Hello World!";
+document.getElementById("domOutput").textContent="textContent output:This is safe plain text";
+</script>
+</body>
+</html>

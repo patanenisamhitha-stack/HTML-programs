@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Print Object Data Using Loops</title>
+</head>
+<body>
+<h1>Print Object Data Using Loops</h1>
+<h2>Using for-in loop</h2>
+<p id="forInOutput"></p>
+<h2>Using for-of loop(on Object Entires)</h2>
+<p id="forOfOutput"></p>
+<script>
+const person={
+name:"Priya",
+age:18,
+gender:"Female",
+occupation:"Student"
+};
+let forInOutput=";
+for(let key in person){
+if(person.hasOwnProperty(key)){
+forinOutput+=key+":'+person[key]+"<br>";
+}
+}
+document.getElementById("forInOutput").innerHTML=forInOutput;
+let forEachOutput=";
+Object.values(person).forEach(value=>{
+forEachOutput+=value+"<br>";
+}};
+document.getElementById("forEachOutput").innerHTMML=forEachOutput;
+let forOfOutput=";
+for(let [key,value] of Object.entires(person)){
+forOfOutput+=key+":"+value+"<br>";
+}
+document.getElementById("forOfOutput").innerHTML=forOfOutput;
+</script>
+</body>
+</html>
+

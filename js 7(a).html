@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Document Title</title>
+</head>
+<body>
+  <h2>Document Object Example</h2>
+  <p id="info"></p>
+
+  <script>
+    // Document object properties
+    let title = document.title;
+    let url = document.URL;
+
+    // Document methods
+    document.getElementById("info").innerHTML =
+      "Document Title: " + title + "<br>" +
+      "Document URL: " + url;
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Larger Number Program</title>
+</head>
+<body>
+<h1>Find the Larger Number</h1>
+<button onclick="findLargerNumber()">Click to Enter Numbers</button>
+<script>
+function findLargerNumber(){
+let num1=parseInt(prompt("Enter the first number:"));
+let num2=parseInt(prompt("Enter the second number:"));
+let num3=parseInt(prompt("Enter the third number:"));
+if(num1==num2 && num2==num3){
+alert("Equal Numbers");
+}else{
+let largest = Math.max(num1,num2,num3);
+alert(largest+"LARGER NUMBER");
+}
+}
+</script>
+</body>
+</html>

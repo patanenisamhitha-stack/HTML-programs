@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Voter Eligibility</title>
+</head>
+<body>
+<h2>Voter Eligibility Check</h2>
+<div id="output"></div>
+<script>
+const name= prompt("Enter your name:");
+const age= parseInt(prompt("Enter your age:"),10);
+let status;
+ if(age>=18){
+   status="Eligible to vote";
+ } else{
+status="Not Eligible to vote";
+}
+document.getElementById("output").innerHTML=`
+<table border="1"cellpadding="8">
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>${name}</td>
+<td>${age}</td>
+<td>${status}</td>
+</tr>
+</table>
+`;
+</script>
+</body>
+</html>

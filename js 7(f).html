@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<body>
+  <h2>Regex Object Example</h2>
+  <p id="regexOutput"></p>
+  <script>
+    let str = "Hello 123, this is JS!";
+    let pattern = /\d+/; // find numbers
+
+    let result =
+      "Test digits? " + pattern.test(str) + "<br>" +
+      "Match: " + str.match(pattern);
+
+    document.getElementById("regexOutput").innerHTML = result;
+  </script>
+</body>
+</html>

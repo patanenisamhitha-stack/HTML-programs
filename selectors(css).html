@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College CSS selectors</title>
+  <style>
+    h1{color:blue;}
+    #collegeName{color:green;}
+    .department{color:brown;}
+    h2,p{font-family:Arial}
+    *{margin:5px;}
+   
+    div p{color:purple;}
+    div>p {font-weight:bold;}
+    h2+p{ background: yellow;}
+    h2~p{font-style:italic;}
+
+    a:hover{color:red;}
+    p:first-child{color:darkblue;}
+
+    /iv)PSEUDO-ELEMENT/
+    p::first-letter{font-size:24px;color:orange;}
+    p::after{content:"@";color: green;}
+
+    /v)ATTRIBUTE/
+    a[target="_blank"]{color:darkred;}
+    input[type="text"] {border:2px solid blue;}
+  </style>
+</head>
+<body>
+  <h1 id="collegeName">Aditya University</h1>
+  <h2 class="department">Computer Science department</h2>
+  <p>Welcome to our college website.</p>
+  <p>This paragraph is inside the book</p>
+
+  <div>
+    <p>This is inside a div(child & descendant).</p>
+    <span><p>Nested paragraph inside span(descendant only)</p></span>
+  </div>
+  <h2>Library</h2>
+  <p>Library has 10,000+ books.</p>
+  <p>Open from 9am to 5pm.</p>
+
+  <a href="home.html">Home</a>
+  <a href="https://example.com" target="_blank">External Link</a>
+
+  <form>
+    Enter Name:<input type="text" placeholder="You Name">
+  </form>
+</body>
+</html>

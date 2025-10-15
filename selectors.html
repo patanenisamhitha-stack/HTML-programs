@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College CSS Selectors</title>
+<style>
+/i)SIMPLE SELECTORS/
+h1{color:blue;} /element/
+#collegeName{color:green;}/id/
+.department{color:brown;}/class/
+/ii)COMBINATOR SELECTORS/
+div p{color:purple;}/descendant/
+div>p{font-weight:bold;}/child/
+h2+p{background:yellow;}/adjacent sibling/
+h2~p{font-style:italic;}/general sibling/
+/iii)PSEUDO-CLASS/
+a:hover{volor:red;}/hover state for link/
+p:first-child{color:darkblue;}/first<p>inside a parent/
+/iv)PSEUDO-ELEMENT/
+p::first-letter{fnt-size:24px;color:orange;}/first letter of each <p>/
+p::after{content:"✔";color:green;}/add a check-mark after each <p>/
+/v)ATTRIBUTE/
+a[target="blank"]{color:darkred;}/anchors whose target is_blank/
+input[type="text"]{border:2px solid blue;}/text inputs/
+</style>
+</head>
+<body>
+<h1 id="collegeName">Aditya University</h1>
+<h2 class="department">Computer Science Department</h2>
+<p>Welcome to our college website.</p>
+<p>This paragraph is inside the body.</p>
+<div>
+<p>This is inside a div(child & descendant).</p>
+<span><p>Nested paragraph inside span (descendant only).</p></span>
+</div>
+<h2>Library</h2>
+<p>Library has 10,000+books.</p>
+<p>Open from 9am to 5pm.</p>
+<a href="home.html">Home</a> |
+<a href="https://example.com"target="_blank">External Link</a>
+<form>
+Enter Name:<input type="text" placeholder="Your Name">
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<body>
+  <h2>Math Object Example</h2>
+  <p id="mathOutput"></p>
+  <script>
+    let num = -7.6;
+
+    let result =
+      "Absolute: " + Math.abs(num) + "<br>" +
+      "Round: " + Math.round(num) + "<br>" +
+      "Ceil: " + Math.ceil(num) + "<br>" +
+      "Floor: " + Math.floor(num) + "<br>" +
+      "Random (0–1): " + Math.random();
+
+    document.getElementById("mathOutput").innerHTML = result;
+  </script>
+</body>
+</html>

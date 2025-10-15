@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<body>
+  <h2>String Object Example</h2>
+  <p id="strOutput"></p>
+  <script>
+    let text = "JavaScript Example";
+
+    let result =
+      "Length: " + text.length + "<br>" +
+      "Uppercase: " + text.toUpperCase() + "<br>" +
+      "Lowercase: " + text.toLowerCase() + "<br>" +
+      "Substring(0,10): " + text.substring(0, 10) + "<br>" +
+      "Replace: " + text.replace("Example", "Demo");
+
+    document.getElementById("strOutput").innerHTML = result;
+  </script>
+</body>
+</html>
