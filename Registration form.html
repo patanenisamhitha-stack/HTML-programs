@@ -1,20 +1,70 @@
- <!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<head><title>Registration Form</title></head>
+<head>
+     <title>Simple registration form</title>
+</head>
 <body>
-<center>
-<p><b>Registration Form</b></p>
-</center>
-<p>
-Full Name
-</p>
-<form action="">
-<p>
-<textarea name="Full Name"rows="1"cols="30">
-</textarea>
-</p>
-<form action="#"method="post">
-<label for="password">Password</label><br>
-<input type="password"id="password"name="password"required><br><br>
-
-
+     <h2>Registration form</h2>
+     <form>
+	  <table>
+		<tr>
+		   <td>Full name</td>
+		   <td><input type="text" name="fullname"></td>
+		</tr>
+		<tr>
+		   <td>Password</td>
+		   <td><input type="password" name="password"></td>
+		</tr>
+		<tr>
+		   <td>Age</td>
+		   <td><input type="number" name="age"></td>
+		</tr>
+		<tr>
+		   <td>Date of birth</td>
+		   <td><input type="date" name="dob"></td>
+		</tr>
+		<tr>
+		   <td>Gender</td>
+		   <td><input type="radio" name="gender" value="Male">Male</td>
+		   <td><input type="radio" name="gender" value="Female">Female</td>
+		   <td><input type="radio" name="gender" value="Others">Others</td>
+		</tr>
+		<tr>
+		   <td>Hobbies</td>
+		   <td><input type="checkbox" name="hobbies" value="Reading">Reading</td>
+		   <td><input type="checkbox" name="hobbies" value="Music">Music</td>
+		   <td><input type="checkbox" name="hobbies" value="Playing">Playing</td>
+		   <td><input type="checkbox" name="hobbies" value="Travelling">Travelling</td>
+		   <td><input type="checkbox" name="hobbies" value="Others">Others</td>
+		</tr>
+		<tr>
+		   <td>Country</td>
+		   <td>
+			<select name="country">
+				<option>Select</option>
+				<option>India</option>
+				<option>USA</option>
+				<option>UK</option>
+				<option>Canada</option>
+				<option>Others</option>
+		   	</select>
+		   </td>
+		</tr>
+		<tr>
+		   <td>Address</td>
+		   <td>
+			<textarea rows="3" cols="3" name'address"></textarea>
+		   </td>
+		</tr>
+		<tr>
+		   <td>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</tr>
+	   </table>
+	</form>
+</body>
+</html>
+		
+		  
+	      
